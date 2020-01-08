@@ -9,11 +9,12 @@
 }
 /* header-top */
 .header-top {
+  padding-bottom: 5px;
   top: 0;
   border-bottom: 1px solid #e9e9e9;
 }
 .header-top .container {
-  padding: 6px 22px 9px 22px;
+  padding: 6px 22px 9px 32px;
   margin: 0 auto;
   max-width: 72rem;
 }
@@ -22,7 +23,7 @@
   width: 100%;
 }
 .header-logo {
-  margin-right: 694px;
+  margin-right: 688px;
   display: flex;
   align-items: center;
 }
@@ -38,6 +39,7 @@
   src: url("fontfamily/utm-avobold.woff") format("woff");
 }
 .title-clinic {
+  margin-bottom: 5px;
   color: #0d1d25;
   font-size: 23px;
   text-transform: uppercase;
@@ -50,7 +52,7 @@
   src: url("fontfamily/utm-avo.woff") format("woff");
 }
 .title .title-phys {
-  /* font-weight: lighter; */
+  margin-bottom: 5px;
   color: #485054;
   font-family: "UTM Avo";
   font-size: 18.5px;
@@ -81,6 +83,7 @@
 
 /* header-nav */
 .header-nav .container {
+  /* padding-top: 16px; */
   padding-left: 22px;
   padding-right: 22px;
   margin: 0 auto;
@@ -88,14 +91,14 @@
   max-width: 72rem;
 }
 .navigation {
-  margin-left: 7px;
-  margin-right: 381px;
+  margin-left: 15px;
+  margin-right: 372px;
 }
 .menu-list {
   display: flex;
 }
 .menu-item {
-  padding: 19px 24px 16px 24px;
+  padding: 25px 24px 24px 24px;
 
   list-style-type: none;
   border-right: 1px solid #e9e9e9;
@@ -110,9 +113,12 @@
 #menu-link-6 {
   border: 0;
 }
+#menu-link-health {
+  color: #4cc1fc;
+}
 .follow-img {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 24px;
+  padding-bottom: 12px;
   margin-left: 11px;
   width: 1.4rem;
   height: 1.4rem;
@@ -124,26 +130,23 @@
 
 /* -----section-banner-- */
 .section-banner {
- position: relative;
+  position: relative;
 }
 .banner-img {
   width: 100%;
-  
 }
-.section-banner .container{
+.section-banner .container {
   top: 85px;
   width: 72rem;
   position: absolute;
   /* align-items: center; */
   left: 176px;
-  padding-left: 22px;
+  padding-left: 33px;
   padding-right: 22px;
 }
 .breadcrumb {
-  
-  
   display: flex;
-  
+
   list-style-type: none;
 }
 .breadcrumb-item {
@@ -161,10 +164,10 @@
 
 /* section-services */
 .section-services {
-  padding-top: 73px;
+  padding-top: 84px;
 }
 .section-services .container {
-  padding-left: 22px;
+  padding-left: 37px;
   padding-right: 22px;
   margin: 0 auto;
   max-width: 72rem;
@@ -188,7 +191,8 @@
   background-color: #d9e4e9;
 }
 .title-person {
-  color: #29353c;
+  /* color: #29353c; */
+  color: black;
   font-weight: lighter;
   font-size: 14px;
   font-family: "UTM Avo";
@@ -209,18 +213,24 @@
 }
 .menu-list-adults {
   margin-left: 18px;
+  margin-bottom: 16px;
 }
 .menu-item-adults {
+  margin-bottom: -1px;
   margin-left: 18px;
-  color: #92999d;
+
   list-style-type: disc;
 }
 .menu-item-adults a {
   text-decoration: none;
-  color: #30393f;
+
   line-height: 1.8rem;
   font-size: 14px;
   font-family: "UTM Avo";
+  color: black;
+}
+.menu-item-faqs-children {
+  margin-bottom: 47px;
 }
 
 .menu-item-adults a:hover {
@@ -228,7 +238,7 @@
 }
 
 .form-sidebar {
-  padding: 23px 24px 17px 20px;
+  padding: 23px 24px 28px 24px;
   background-color: #d9e4e9;
 }
 .title-form {
@@ -237,17 +247,20 @@
   font-family: "UTMAvoBold";
 }
 .form-sidebar hr {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   background-color: #62c6f8;
   width: 26.5%;
-  height: 1px;
+  height: 2px;
+  border: none;
 }
 
 input {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  margin-top: 15px;
   width: 100%;
   height: 2.2rem;
   display: block;
+  border: none;
 }
 input::placeholder {
   padding-left: 12px;
@@ -256,22 +269,23 @@ input::placeholder {
   font-size: 15px;
 }
 .form-sidebar .time-img {
-  margin: -80px 269px 46px;
+  margin: -80px 261px 46px;
   width: 1.16rem;
 }
 button {
   margin: auto;
-  margin-top: -26px;
+  margin-top: -24px;
+  margin-bottom: -10px;
+  padding-bottom: 5px;
   background-color: #4bbc56;
   color: white;
   display: block;
-
+  border: none;
   width: 7.3rem;
   height: 2.81rem;
   font-size: 16px;
   font-family: "UTMAvoBold";
   /* font-weight: bold; */
-  border-color: #4bbc56;
 }
 /* services-list */
 .services-list {
@@ -280,8 +294,8 @@ button {
   list-style-type: none;
 }
 .services-item {
-  margin-left: 25px;
-  margin-bottom: 21px;
+  margin-left: 22px;
+  margin-bottom: 24px;
 }
 .services-wrap {
   width: 16.9rem;
@@ -291,30 +305,40 @@ button {
   width: 16.9rem;
   height: 10.5rem;
 }
+.content {
+  position: relative;
+}
 .content-wrap {
-  padding: 22px 37px 38px 24px;
+  padding: 22px 37px 43px 24px;
 }
 .services-title {
+  padding-left: 2px;
   font-size: 18.5px;
   font-family: Arial, Helvetica, sans-serif;
 
   text-transform: uppercase;
 }
 .content-wrap .paragraph {
-  margin-top: 13px;
+  margin-top: 11px;
+  padding-left: 2px;
   font-size: 15.2px;
   font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 1.36;
 }
 
 .next-img {
-  margin-top: -15px;
-  margin-left: 323px;
+  background-color: #62c6f8;
+  padding: 5px;
+  right: 0;
+  bottom: 0;
+  width: 7px;
   position: absolute;
 }
 
 /* footer-information */
 .footer-information {
-  margin-top: 38px;
+  margin-top: 23px;
   width: 100%;
   background-color: #62c6f8;
 }
@@ -322,23 +346,27 @@ button {
   border-bottom: 1px solid #e9e9e9;
 }
 .section-information .container {
-  padding: 47px 22px 37px 22px;
+  padding: 48px 22px 37px 22px;
   margin: 0 auto;
   max-width: 72rem;
 
   display: flex;
 }
 .info-detail {
-  margin-right: 267px;
+  margin-right: 272px;
+  margin-left: 8px;
+}
+.info-detail-social {
+  margin-right: 50px;
 }
 .title-info {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   color: white;
   font-size: 20px;
   font-family: "UTMAvoBold";
 }
 .menu-list-info {
-  padding-left: 19px;
+  margin-left: 16px;
 }
 .menu-item-info {
   line-height: 1.7rem;
@@ -348,7 +376,7 @@ button {
   font-family: Arial, Helvetica, sans-serif;
 }
 .menu-list-icon {
-  margin-left: -19px;
+  margin-left: 5px;
 }
 .menu-icon {
   display: flex;
@@ -376,12 +404,15 @@ button {
   display: block;
 }
 .copyright-left {
+  padding-left: 5px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 13.9px;
 }
 .copyright-right {
+  padding-top: 5px;
+  padding-right: 10px;
   text-transform: uppercase;
   float: right;
   color: white;
