@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Câu hỏi lý thuyết</h2>
+    <h3>
+      Câu 1: What are the differences between a variable that is: `null`,
+      `undefined`?
+    </h3>
+    <p>
+      Null có nghĩa là giá trị rỗng hoặc giá trị không tồn tại và nó là một
+      object .
+    </p>
+    <p>undefined có nghĩa là không xác định và có kiểu giá trị là undefined.</p>
+    <h3>
+      Câu 2: What is `use strict`? what are the advantages and disadvantages to
+      using it?
+    </h3>
+    <p>
+      Use strict có nghĩa là tất cả các dòng code phía dưới dòng khai báo 'use
+      strict' sẽ được quản lý một cách nghiêm ngặt hơn về cú pháp.
+    </p>
+    <p>
+      <b>Ưu điểm: </b>
+    </p>
+    <p>
+      Ngăn chặn sử dụng và throw errors khi người lập trình thực hiện những xử
+      lý được coi là unsafe những xử lý mà có thể là ngoài ý muốn.
+    </p>
+
+    <p>
+      Vô hiệu hoá các tính năng có thể gây nhầm lẫn, hoặc không nên được sử
+      dụng.
+    </p>
+    <p>
+      Ngăn chặn sử dụng một số từ mà có thể sẽ được sử dụng làm keywork trong
+      tương lai.
+    </p>
+
+    <p><b>Nhược điểm:</b></p>
+    <p>Không thể sử dụng một biến mà không khai báo</p>
+    <p>Báo lỗi những assignments vốn không thể thực hiện</p>
+    <p>Báo lỗi delete những thứ không thể xóa</p>
+    <p>Các tham số của một hàng không được phép trùng nhau</p>
+    <p>Không sử dụng được cách viết số thuộc hệ bát phân với tiền tố là 0</p>
+    <p>Không thể sử dụng with</p>
+    <p>Không sử dụng được biến được khai báo bên trong eval</p>
+    <p>Không thể sử dụng eval và arguments như là một identifier</p>
+    <p>Thay đổi cách thức hoạt động của this trong một số trường hợp</p>
+    <p>
+      Hạn chế sử dụng các property caller, callee và arguments trong một số
+      trường hợp
+    </p>
+    <p>Không thể định nghĩa function bên trong một statement hay một block</p>
+    <p>
+      Không thể sử dụng một số từ khoá được “giữ chỗ” trước cho những phiên bản
+      ES sau này
+    </p>
+    <h3>
+      Câu 3: What are the differences between `==` and `===`? Write an example
+      for each case (if any)?
+    </h3>
+    <p>
+      Toán tử '==' có nghĩa là chỉ so sánh về giá trị.
+    </p>
+    <p>Ví dụ: Console.log(2 == "2")-->Kết quả: true</p>
+    <p>Toán tử '===' có nghĩa là so sánh về cả giá trị và kiểu dữ liệu.</p>
+    <p>Ví dụ: console.log(2 === "2")--> Kết quả: false</p>
+
+    <h3>
+      Câu 4: What is different between declaration: `var`, `const` and `let`?
+    </h3>
+    <p>
+      var là từ khóa khai báo biến toàn cục, có nghĩa là biến đó có phạm vi truy
+      cập xuyên suốt function chứa nó.
+    </p>
+    <p>
+      let là từ khóa khai báo biến cục bộ, có nghĩa là biến đó chỉ có thể truy
+      cập trong block bao quanh nó.
+    </p>
+    <p>
+      const dùng để khai báo một hằng số , là một giá trị không thay đổi trong
+      suốt quá trình chạy.
+    </p>
+    <h3>Câu 5: What are values in the `FALSE` grourp.</h3>
+    <p>undefined, null, '', 0</p>
+
+    <script src="Exer.js"></script>
+  </body>
+</html>
