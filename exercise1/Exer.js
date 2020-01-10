@@ -1,52 +1,42 @@
 // Câu 1:
-var a;
-var b;
+
 function SumTwoNumber(a,b) {
-  if(a === b) {
-    console.log(3* (a+b));
-  } else {
-    console.log(a+b);
-  }
+  return (a === b) ? (3* (a+b)) : (a+b);
 }
 
-SumTwoNumber(2,2);
+console.log(SumTwoNumber(2,2));
 
 // Câu 2:
-var a;
-function CompareTwoNumber(a) {
-  if(0 <= a < 19) {
-    console.log(19-a);
-  } else if(a > 19) {
-    console.log(a-19);
-  } else
-    console.log(0);
+
+function CompareTwoNumber(c) {
+  return (19-c >= 0) ? (19-c) : (-3 * (19-c)) ;
 }
-CompareTwoNumber(6);
+console.log(CompareTwoNumber(12));
+
 
 // Câu 3:
 var A = [];
-var str1;
-
 function DivideNumber3(str1) {
-  for (var i=0;i<=9; i++) {
-    A[i]=str1.replace('*',i);
-    if (A[i] % 3 === 0) {
-      console.log(A[i]);
+  for (i=0; i<=9; i++) {
+    var subA = str1.replace('*',i);
+    if (parseInt(subA) % 3 === 0) {
+      A.push(subA);
     }
   }
+  return A;
 }
-DivideNumber3('1*9');
+console.log(DivideNumber3('1*9'));
 
 // Câu 4:
 var B = [];
-var str2;
 
 function DivideNumber6(str2) {
-  for (var i=0;i<=9; i++){
-    B[i] = str2.replace('*',i);
-    if (B[i] % 6 === 0) {
-      console.log(B[i]);
+  for (i=0; i<=9; i++) {
+    var subB = str2.replace('*',i);
+    if (parseInt(subB) % 6 === 0) {
+      B.push(subB);
     }
   }
+  return B;
 }
-DivideNumber6('123456789*');
+console.log(DivideNumber6('1234567890*'));
