@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header-full">
+      <section class="header-top">
+        <div class="container">
+          <div class="header-wrap">
+            <div class="header-logo">
+              <img class="logo-img" src="images/logo.jpeg" alt="" />
+              <div class="title">
+                <h1 class="title-clinic">Beauty - women</h1>
+                <p class="title-phys">Physiotherapy - Rehabilitation</p>
+              </div>
+            </div>
+            <div class="header-contact">
+              <img class="phone-img" src="images/phone.png" alt="" />
+              <h4 class="title-question">Question for the doctor?</h4>
+              <h3 class="title-number">05113941 977</h3>
+            </div>
+            <div class="header-cart" title="cart">
+              <div class="icon-cart">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </div>
+
+              <div id="cart-count">0</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header-nav">
+        <div class="container">
+          <nav class="navigation">
+            <ul class="menu-list">
+              <li class="menu-item"><a class="menu-link" href="">HOME</a></li>
+              <li class="menu-item">
+                <a class="menu-link" href="">ABOUT US</a>
+              </li>
+              <li class="menu-item">
+                <a id="menu-link-health" class="menu-link" href=""
+                  >HEALTH SERVICES</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">REGULAR MEDICINE</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">SET CALENDAR</a>
+              </li>
+              <li id="menu-link-6" class="menu-item">
+                <a class="menu-link" href="">CONSULT & CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-list-img">
+            <img
+              class="follow-img facebook-img"
+              src="images/faceb.png"
+              alt=""
+            />
+            <img class="follow-img google-img" src="images/ggc.png" alt="" />
+            <img class="follow-img youtube-img" src="images/youtb.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section-banner">
+        <div class="container">
+          <img class="banner-img" src="images/banner1.jpg" alt="" />
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="">HOME</a>
+            </li>
+            <li class="breadcrumb-item active">CART</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-cart">
+        <div class="container">
+          <table class="table-cart">
+            <tr>
+              <th>id</th>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>SubTotal</th>
+              <th></th>
+            </tr>
+            <tbody class="body-cart"></tbody>
+          </table>
+
+          <button>CHECKOUT</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-information">
+      <section class="section-information">
+        <div class="container">
+          <div class="info-detail">
+            <h3 class="title-info">ABOUT US</h3>
+            <ul class="menu-list-info">
+              <li class="menu-item-info">general introduction</li>
+              <li class="menu-item-info">human</li>
+              <li class="menu-item-info">facilities and facilities</li>
+            </ul>
+          </div>
+          <div class="info-detail">
+            <h3 class="title-info">SUPPORT</h3>
+            <ul class="menu-list-info">
+              <li class="menu-item-info">health counseling</li>
+              <li class="menu-item-info">regular medicine</li>
+              <li class="menu-item-info">schedule appointments</li>
+            </ul>
+          </div>
+          <div class="info-detail-social">
+            <h3 class="title-info">SOCIAL CONNECTION</h3>
+            <ul class="menu-list-info menu-list-icon">
+              <li class="menu-item-info menu-icon">
+                <img class="icon-info" src="images/fb.png" alt="" />
+                <span>Facebook</span>
+              </li>
+              <li class="menu-item-info menu-icon">
+                <img class="icon-info" src="images/ggcong.png" />
+                <span>Google+</span>
+              </li>
+              <li class="menu-item-info menu-icon">
+                <img class="icon-info" src="images/youtube.png" alt="" />
+                <span>Youtube</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-copyright">
+        <div class="container">
+          <span class="copyright-left"
+            >@ 2018 - copyright of specialized clinic</span
+          >
+          <span class="copyright-right"
+            >design by
+            <p>dd.com</p></span
+          >
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="productlist.js"></script>
+  </body>
+</html>
