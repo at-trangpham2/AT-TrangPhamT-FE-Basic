@@ -95,7 +95,7 @@
 .icon-cart {
   padding-top: 16px;
 }
-#cart-count {
+#js-cart-count {
   position: absolute;
   top: 0px;
   right: -13px;
@@ -229,6 +229,28 @@
   color: white;
   background-color: #199427;
   border: 0;
+}
+.section-cart .container {
+  margin: 0 auto;
+  max-width: 62rem;
+}
+.thead-cart {
+  background-color: #1f601f;
+  /* padding: 28px; */
+}
+.thead-cart tr th {
+  padding: 20px 30px 20px 20px;
+}
+#js-body-cart img {
+  width: 5rem;
+}
+.btn-checkout {
+  background-color: #1f601f;
+  border: 0;
+  padding: 15px;
+  color: white;
+  border-radius: 17px;
+  margin-top: 40px;
 }
 /* footer-information */
 .footer-information {
