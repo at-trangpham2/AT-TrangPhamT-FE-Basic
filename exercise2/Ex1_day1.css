@@ -172,7 +172,7 @@
 }
 .services-sidebar {
   width: 14.8rem;
-  margin-right: 8px;
+  margin-right: 15px;
 }
 
 /* ---faqs-group-- */
@@ -294,12 +294,12 @@ button {
   list-style-type: none;
 }
 .services-item {
-  margin-left: 12px;
-  width: calc(100% / 3 - 1.3%);
+  /* margin-left: 12px; */
+  width: calc(100% / 3);
   margin-bottom: 21px;
 }
 .services-wrap {
-  /* width: 16.9rem; */
+  width: 14.9rem;
   border: 1px solid #ebebeb;
 }
 .services-img {
