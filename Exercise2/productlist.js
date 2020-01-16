@@ -2,14 +2,17 @@ localStorage.setItem("product", JSON.stringify(product));
 var item = [];
 item = JSON.parse(localStorage.getItem("product"));
 
-// var createProduct = document.getElementById("js-services-item");
 function showProducts(product) {
   var createProduct = document.getElementById("js-services-item");
   createProduct.innerHTML = "";
 
   for (var i = 0; i < item.length; i++) {
+    // var cardWrap = document.createElement("div");
+    // cardWrap.className = "services-wrap";
+
     var card = document.createElement("div");
     card.className = "services-first";
+    // cardWrap.appendChild(card);
 
     var cardimg = document.createElement("div");
     cardimg.className = "img-wrap";
@@ -53,23 +56,22 @@ showProducts(product);
 
 function addToCart(b) {
   var count = 1;
-  var pId = +b.target.dataset.id;
+  var bId = +b.target.dataset.id;
   var cart = JSON.parse(localStorage.getItem("cart"));
 
-  if (cart) {
-    // var cart = JSON.parse(localStorage.getItem("cart"));
+  if (cart && cart.length) {
     for (var i = 0; i < cart.length; i++) {
-      if (pId === cart[i].id) {
+      if (bId === cart[i].id) {
         cart[i].count++;
         break;
       } else if (i === cart.length - 1) {
-        cart.push({ id: pId, count: count });
+        cart.push({ id: bId, count: count });
         break;
       }
     }
   } else {
     cart = [];
-    cart.push({ id: pId, count: count });
+    cart.push({ id: bId, count: count });
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));

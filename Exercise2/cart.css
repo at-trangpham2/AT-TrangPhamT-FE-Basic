@@ -129,7 +129,7 @@
   color: #b3b3b3;
   text-decoration: none;
   font-size: 12px;
-
+  text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
 }
 #menu-link-6 {
@@ -169,6 +169,7 @@
 .breadcrumb-item {
   font-size: 12px;
   font-family: "UTM Avo";
+  text-transform: uppercase;
 }
 .breadcrumb-link {
   text-decoration: none;
@@ -234,6 +235,10 @@
   margin: 0 auto;
   max-width: 62rem;
 }
+.table-cart {
+  border-collapse: collapse;
+  width: 100%;
+}
 .thead-cart {
   background-color: #1f601f;
   /* padding: 28px; */
@@ -241,8 +246,28 @@
 .thead-cart tr th {
   padding: 20px 30px 20px 20px;
 }
+#js-body-cart {
+  text-align: center;
+}
 #js-body-cart img {
   width: 5rem;
+}
+#js-body-cart td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+#js-total-cart {
+  text-align: center;
+}
+#js-total-cart td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.btn-remove {
+  background-color: red;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
 }
 .btn-checkout {
   background-color: #1f601f;
