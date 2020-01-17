@@ -4,7 +4,7 @@ function addToTable() {
     cart = [];
   }
   var product = JSON.parse(localStorage.getItem("product"));
-  console.log(product);
+  // console.log(product);
   var showcart = document.getElementById("js-body-cart");
   showcart.innerHTML = "";
   var sum = 0;
@@ -43,7 +43,7 @@ function addToTable() {
         var input = document.createElement("input");
         input.type = "number";
         input.value = cart[i].count;
-        input.addEventListener("change", changeQuantity);
+        // input.addEventListener("change", changeQuantity);
         td3.appendChild(input);
 
         var btn2 = document.createElement("button");
@@ -112,9 +112,13 @@ function remove(brm) {
     if (brmove === cart[i].id) {
       cart.splice(i, 1);
     }
+    var del = this.parentNode.parentNode;
+
+    del.remove();
   }
   localStorage.setItem("cart", JSON.stringify(cart));
-  location.reload();
+  // addToTable();
+  numberCart();
 }
 
 //increase quantity of product
@@ -130,12 +134,11 @@ function increase(bIncre) {
   }
   localStorage.setItem("cart", JSON.stringify(cart));
   addToTable();
-  location.reload();
 }
 
 //reduce quantity of product
 function reduce(bRedu) {
-  var redu = + bRedu.target.dataset.id;
+  var redu = +bRedu.target.dataset.id;
   var cart = JSON.parse(localStorage.getItem("cart"));
   for (var i = 0; i < cart.length; i++) {
     if (redu === cart[i].id) {
@@ -146,14 +149,13 @@ function reduce(bRedu) {
   }
   localStorage.setItem("cart", JSON.stringify(cart));
   addToTable();
-  location.reload();
 }
 
 //Change number of quantity
-function changeQuantity(event) {
-  var input = event.target;
-  if (isNaN(input.value) || input.value <= 0) {
-    input.value = 1;
-  }
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
+// function changeQuantity(event) {
+//   var input = event.target;
+//   if (isNaN(input.value) || input.value <= 0) {
+//     input.value = 1;
+//   }
+//   localStorage.setItem("cart", JSON.stringify(cart));
+// }

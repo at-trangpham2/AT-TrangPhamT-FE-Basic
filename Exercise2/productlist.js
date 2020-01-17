@@ -50,6 +50,7 @@ function showProducts(product) {
 
     createProduct.appendChild(card);
   }
+  // console.log(Object.keys(item.id));
 }
 
 showProducts(product);
@@ -65,13 +66,19 @@ function addToCart(b) {
         cart[i].count++;
         break;
       } else if (i === cart.length - 1) {
-        cart.push({ id: bId, count: count });
+        cart.push({
+          id: bId,
+          count: count
+        });
         break;
       }
     }
   } else {
     cart = [];
-    cart.push({ id: bId, count: count });
+    cart.push({
+      id: bId,
+      count: count
+    });
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));

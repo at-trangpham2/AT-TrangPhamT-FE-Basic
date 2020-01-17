@@ -40,14 +40,6 @@ var product = [
     price: 60000
   },
   {
-    id: 6,
-    img: "./images/kemdda.jpg",
-    name: "Kem dưỡng da Netrogena ",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna",
-    price: 160000
-  },
-  {
     id: 7,
     img: "./images/kemSenka.jpg",
     name: "SKem dưỡng da ban ngày Senka",
@@ -55,6 +47,16 @@ var product = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna",
     price: 60000
   },
+  
+  {
+    id: 6,
+    img: "./images/kemdda.jpg",
+    name: "Kem dưỡng da Netrogena ",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna",
+    price: 160000
+  },
+
   {
     id: 8,
     img: "./images/kemVichy.jpg",
