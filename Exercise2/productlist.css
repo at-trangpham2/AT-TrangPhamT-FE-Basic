@@ -78,7 +78,7 @@
 }
 .title-question {
   margin-right: 7px;
-  color: #828282;
+  color: black;
   font-style: italic;
   font-size: 14px;
 
@@ -104,7 +104,7 @@
 .fa-cart-plus {
   color: black;
 }
-#js-cart-count {
+.cart-count {
   position: absolute;
   top: 0px;
   right: -13px;
@@ -192,10 +192,10 @@
 }
 
 /* section-services */
-.section-services {
+.section-product {
   padding-top: 69px;
 }
-.section-services .container {
+.section-product .container {
   margin: 0 auto;
   max-width: 62rem;
   flex-wrap: wrap;
@@ -240,11 +240,11 @@
   font-weight: lighter;
 }
 .services-first .card-btn {
-  margin-left:35%;
+  margin-left: 35%;
   padding: 9px;
   font-size: 14px;
   color: white;
-  /* background-color: #199427; */
+  border-radius: 5px;
   border: 0;
   background: linear-gradient(to right, #654ea3, #eaafc8);
   cursor: pointer;

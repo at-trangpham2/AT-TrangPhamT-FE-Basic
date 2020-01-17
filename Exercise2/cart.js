@@ -7,11 +7,11 @@ function addToTable() {
   // console.log(product);
   var showcart = document.getElementById("js-body-cart");
   showcart.innerHTML = "";
-  var sum = 0;
+  // var sum = 0;
   for (var i = 0; i < cart.length; i++) {
     for (var j = 0; j < product.length; j++) {
       if (cart[i].id === product[j].id) {
-        sum += product[j].price * cart[i].count;
+        // sum += product[j].price * cart[i].count;
         var tr = document.createElement("tr");
 
         var th1 = document.createElement("td");
@@ -78,6 +78,7 @@ function addToTable() {
   }
 
   var totalCart = document.getElementById("js-total-cart");
+  totalCart.innerHTML = "";
 
   var tr2 = document.createElement("tr");
 
@@ -90,8 +91,8 @@ function addToTable() {
   tr2.appendChild(td10);
 
   var td11 = document.createElement("td");
-
-  td11.innerText = sum;
+  td11.innerText = total();
+  // td11.innerText = sum;
   tr2.appendChild(td11);
 
   var td12 = document.createElement("td");
@@ -101,6 +102,20 @@ function addToTable() {
 }
 
 addToTable();
+
+function total() {
+  var cart = JSON.parse(localStorage.getItem("cart"));
+  var product = JSON.parse(localStorage.getItem("product"));
+  var finalTotal = 0;
+  for (var j = 0; j < product.length; j++) {
+    for (var i = 0; i < cart.length; i++) {
+      if (cart[i].id === product[j].id) {
+        finalTotal += product[j].price * cart[i].count;
+      }
+    }
+  }
+  return finalTotal;
+}
 
 //remove product
 function remove(brm) {
@@ -113,11 +128,10 @@ function remove(brm) {
       cart.splice(i, 1);
     }
     var del = this.parentNode.parentNode;
-
     del.remove();
   }
   localStorage.setItem("cart", JSON.stringify(cart));
-  // addToTable();
+  addToTable();
   numberCart();
 }
 
@@ -144,6 +158,8 @@ function reduce(bRedu) {
     if (redu === cart[i].id) {
       if (cart[i].count > 0) {
         cart[i].count = cart[i].count - 1;
+      } else if (cart[i].count === 0) {
+        cart.splice(i, 1);
       }
     }
   }
@@ -151,11 +167,14 @@ function reduce(bRedu) {
   addToTable();
 }
 
-//Change number of quantity
+// Change number of quantity
 // function changeQuantity(event) {
+//   var cart = JSON.parse(localStorage.getItem("cart"));
 //   var input = event.target;
 //   if (isNaN(input.value) || input.value <= 0) {
 //     input.value = 1;
+//   } else {
+//     addToTable();
 //   }
 //   localStorage.setItem("cart", JSON.stringify(cart));
 // }

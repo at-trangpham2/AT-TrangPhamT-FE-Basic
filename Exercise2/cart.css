@@ -78,7 +78,7 @@
 }
 .title-question {
   margin-right: 7px;
-  color: #828282;
+  color: black;
   font-style: italic;
   font-size: 14px;
 
@@ -104,7 +104,7 @@
 .fa-cart-plus {
   color: black;
 }
-#js-cart-count {
+.cart-count {
   position: absolute;
   top: 0px;
   right: -13px;
@@ -191,14 +191,9 @@
 }
 
 /* section-services */
-.section-services {
-  padding-top: 69px;
-}
-.section-services .container {
-  margin: 0 auto;
-  max-width: 62rem;
-  flex-wrap: wrap;
-  display: flex;
+.section-cart {
+  padding-top: 78px;
+  padding-bottom: 50px;
 }
 
 .services-first {
@@ -261,28 +256,52 @@
 .thead-cart tr th {
   padding: 20px 30px 20px 20px;
 }
-#js-body-cart {
+.body-cart {
   text-align: center;
 }
-#js-body-cart img {
+.body-cart img {
   width: 5rem;
 }
-#js-body-cart td {
+.body-cart td {
   border: 1px solid gray;
   border-collapse: collapse;
+  border-right: none;
+  border-left: none;
 }
-#js-total-cart {
+.total-cart {
   text-align: center;
 }
-#js-total-cart td {
+.total-cart td {
   border: 1px solid gray;
   border-collapse: collapse;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.body-cart input {
+  border: 1px solid black;
+  padding: 3.1px;
+  text-align: center;
+  border-right: none;
+  border-left: none;
+}
+
+.body-cart .btn-primary {
+  background-color: white;
+  color: black;
+  padding: 1px 6px;
+  font-size: 16px;
+  width: 9%;
+  font-weight: bold;
+  border-radius: 4px;
+  border-color: purple;
 }
 .btn-remove {
   background-color: white;
   border: none;
   padding: 6px;
   cursor: pointer;
+  font-weight: bold;
 }
 .btn-checkout {
   background-color: purple;
