@@ -17,7 +17,7 @@ console.log(compareTwoNumber(12));
 // Câu 3:
 
 function divideNumber3(str1) {
-  var A = [];
+  A = [];
   for (i=0; i<=9; i++) {
     subA = str1.replace('*',i);
     if (parseInt(subA) % 3 === 0) {
@@ -31,7 +31,7 @@ console.log(divideNumber3('1*9'));
 // Câu 4:
 
 function divideNumber6(str2) {
-  var B = [];
+  B = [];
   for (i=0; i<=9; i++) {
     subB = str2.replace('*',i);
     if (parseInt(subB) % 6 === 0) {
