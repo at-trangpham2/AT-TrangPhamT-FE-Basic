@@ -21,7 +21,7 @@ function showComment() {
   }
   removeComment();
 }
-showComment();
+// showComment();
 
 function addComment() {
   document
