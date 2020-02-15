@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 79rem;
+  margin: 0 auto;
+}
+.header-top {
+  width: 100%;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.header-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+/* #717171 */
+.header-top .container {
+  display: flex;
+  align-items: center;
+}
+.img-logo {
+  padding: 14px 0;
+}
+.menu-list {
+  display: flex;
+}
+.menu-item {
+  list-style-type: none;
+  padding: 42px;
+}
+.menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-size: 18px;
+  font-weight: 500;
+  /* height: 50px; */
+  /* font-family: ; */
+}
+
+/* .news-detail {
+} */
+.w896 {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+.section-news-title {
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+.section-news-content .paragraph {
+  color: #525252;
+  font-weight: 300;
+  line-height: 1.56rem;
+  letter-spacing: 0.032rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+.section-news-content {
+  margin-bottom: 50px;
+}
+.section-news-social {
+  margin-bottom: 50px;
+}
+.social-share {
+  text-align: center;
+}
+.social-share-title {
+  font-size: 23px;
+}
+.social-list {
+  display: inline-flex;
+}
+.social-item {
+  list-style-type: none;
+  margin: 15px;
+  font-size: 35px;
+}
+.footer-bottom {
+  width: 100%;
+  height: 300px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(15, 12, 11, 0.82) 0,
+    rgba(15, 12, 11, 0.87) 35%,
+    rgba(0, 0, 0, 0.9) 55%,
+    rgba(0, 0, 0, 0.97) 100%
+  );
+}
+.footer-bottom h2 {
+  color: white;
+}
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 9rem;
+}
+.section-comments {
+  padding-bottom: 100px;
+}
+.comment-title {
+  margin-bottom: 20px;
+}
+.comment-enter img {
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+}
+.comment-enter {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+}
+.comment-enter textarea {
+  height: 100%;
+  width: 100%;
+}
+.comment-btn {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  top: 4px;
+  font-size: 27px;
+  background-color: purple;
+  border: 0;
+  color: white;
+}
+.list-comment {
+  display: inline-flex;
+}
+.avatar {
+  width: 55px;
+  height: 55px;
+}
+.btn-remove-comment {
+  border: 0;
+  background-color: white;
+  color: purple;
+  font-size: 18px;
+  font-weight: 560;
+  margin-left: 50px;
+}
