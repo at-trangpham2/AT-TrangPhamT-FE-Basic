@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.sticky-box {
+  padding-top: 40px;
+}
+.sticky-one {
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.sticky-all {
+  position: relative;
+}
+.sticky {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: purple;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+}
+
+.fixed .sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 10px;
+}
+
+.scrolled .sticky {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  
+}
