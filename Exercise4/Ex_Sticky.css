@@ -1,42 +1,46 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
 }
-.sticky-box {
-  padding-top: 40px;
+body {
+  font-family: "Times New Roman", Times, serif;
 }
-.sticky-one {
-  line-height: 50px;
-  padding-left: 20px;
-  font-size: 25px;
+.menu-list {
+  list-style-type: none;
 }
-
-.sticky-all {
+.menu-item-big {
   position: relative;
 }
-.sticky {
+.title-sticky {
   position: absolute;
   left: 0;
   top: 0;
   background-color: purple;
-  width: 20px;
-  height: 20px;
+  width: 54px;
   padding: 10px;
   border-radius: 50%;
   color: white;
+  text-align: center;
 }
 
-.fixed .sticky {
+.menu-list-small {
+  padding-top: 70px;
+}
+.menu-item-small {
+  line-height: 55px;
+  padding-left: 28px;
+  font-size: 25px;
+}
+
+.fixed .title-sticky {
   position: fixed;
   left: 0;
   top: 0;
   padding: 10px;
 }
-
-.scrolled .sticky {
+.scrolled .title-sticky {
   position: absolute;
   top: auto;
   bottom: 0;
-  
 }
