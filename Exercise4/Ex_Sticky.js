@@ -1,5 +1,6 @@
-var stickyScroll = document.getElementsByClassName("menu-item-big");
-var moduleScroll = (function() {
+var scrollModule = (function() {
+  // "use strict";
+  var stickyScroll = document.getElementsByClassName("menu-item-big");
   function handleFixAndScroll() {
     for (var i = 0; i < stickyScroll.length; i++) {
       if (window.pageYOffset >= stickyScroll[i].offsetTop) {
@@ -23,4 +24,4 @@ var moduleScroll = (function() {
     addFixedScroll: handleFixAndScroll
   };
 })();
-window.addEventListener("scroll", moduleScroll.addFixedScroll);
+window.addEventListener("scroll", scrollModule.addFixedScroll);
