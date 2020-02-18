@@ -9,7 +9,7 @@ body {
 .menu-list {
   list-style-type: none;
 }
-.menu-item-big {
+.menu-item-group {
   position: relative;
 }
 .title-sticky {
@@ -24,10 +24,10 @@ body {
   text-align: center;
 }
 
-.menu-list-small {
+.menu-list-data {
   padding-top: 70px;
 }
-.menu-item-small {
+.menu-item-data {
   line-height: 55px;
   padding-left: 28px;
   font-size: 25px;

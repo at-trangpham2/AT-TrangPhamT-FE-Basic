@@ -1,27 +1,27 @@
-var scrollModule = (function() {
+var addStickyModule = (function() {
   // "use strict";
-  var stickyScroll = document.getElementsByClassName("menu-item-big");
-  function handleFixAndScroll() {
-    for (var i = 0; i < stickyScroll.length; i++) {
-      if (window.pageYOffset >= stickyScroll[i].offsetTop) {
-        stickyScroll[i].classList.add("fixed");
+  var stickyEL = document.getElementsByClassName('menu-item-group');
+  function addFunctionForSticky() {
+    for (var i = 0; i < stickyEL.length; i++) {
+      if (window.pageYOffset >= stickyEL[i].offsetTop) {
+        stickyEL[i].classList.add('fixed');
       } else {
-        stickyScroll[i].classList.remove("fixed");
+        stickyEL[i].classList.remove('fixed');
       }
 
       if (
         window.pageYOffset >=
-        stickyScroll[i].offsetTop + stickyScroll[i].offsetHeight - 45
+        stickyEL[i].offsetTop + stickyEL[i].offsetHeight - 45
       ) {
-        stickyScroll[i].classList.add("scrolled");
+        stickyEL[i].classList.add('scrolled');
       } else {
-        stickyScroll[i].classList.remove("scrolled");
+        stickyEL[i].classList.remove('scrolled');
       }
     }
   }
 
   return {
-    addFixedScroll: handleFixAndScroll
+    handleSticky: addFunctionForSticky
   };
 })();
-window.addEventListener("scroll", scrollModule.addFixedScroll);
+window.addEventListener('scroll', addStickyModule.handleSticky);
