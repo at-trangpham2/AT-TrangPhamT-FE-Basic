@@ -1,0 +1,47 @@
+.services-sidebar {
+  width: 41.8rem;
+  margin-right: 15px;
+}
+.faqs-group {
+  margin-bottom: 42px;
+  .faqs-title {
+    padding: 15px 16px 17px 18px;
+    margin-bottom: 9px;
+    background-color: $bg-sidebar;
+    .title-person {
+      @extend %header-wrap-shared;
+      @include color-fontsize(black, 12px);
+      font-weight: lighter;
+      font-family: "UTM Avo";
+    }
+    .title-adults::after {
+      @extend %font-weight-bold;
+      content: url("images/minus.png");
+    }
+    .title-children::after {
+      @extend %font-weight-bold;
+      content: url("images/plus.png");
+    }
+  }
+}
+.menu-list-adults {
+  @include marginLeftBottom(20px, 11px);
+  color: $text-secondary;
+}
+.menu-item-adults {
+  @include marginLeftBottom(17px, -1px);
+  list-style-type: disc;
+  a {
+    @include color-fontsize(black, 12px);
+    text-decoration: none;
+    line-height: 1.6rem;
+    font-family: "UTM Avo";
+    &:hover {
+      color: $link-primary;
+    }
+  }
+}
+
+.menu-item-faqs-children {
+  margin-bottom: 43px;
+}

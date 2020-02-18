@@ -1,0 +1,24 @@
+@mixin color-fontsize($color, $fontsize) {
+  color: $color;
+  font-size: $fontsize;
+}
+
+@mixin clearfix() {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+@mixin styleTitle {
+  margin-bottom: 10px;
+  color: $text-white;
+  font-size: $font-size-heading-3;
+  font-family: "UTMAvoBold";
+}
+
+@mixin marginLeftBottom($left, $bottom) {
+  margin-left: $left;
+  margin-bottom: $bottom;
+}
