@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  color: darkslateblue;
+  text-align: center;
+}
+.menu-list-group {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  overflow: auto;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.menu-list {
+  list-style-type: none;
+}
+.menu-item-group {
+  list-style-type: none;
+  position: relative;
+}
+.title-sticky {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: purple;
+  width: 54px;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.menu-list-data {
+  padding-top: 56px;
+}
+.menu-item-data {
+  line-height: 55px;
+  padding-left: 28px;
+  font-size: 25px;
+}
+
+.fixed .title-sticky {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+.scrolled .title-sticky {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+}
