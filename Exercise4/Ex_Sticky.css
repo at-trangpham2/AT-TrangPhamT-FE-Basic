@@ -6,10 +6,24 @@
 body {
   font-family: "Times New Roman", Times, serif;
 }
+h1 {
+  color: darkslateblue;
+  text-align: center;
+}
+.menu-list-group {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  overflow: auto;
+  margin: auto;
+  margin-top: 200px;
+}
+
 .menu-list {
   list-style-type: none;
 }
 .menu-item-group {
+  list-style-type: none;
   position: relative;
 }
 .title-sticky {
@@ -22,10 +36,10 @@ body {
   border-radius: 50%;
   color: white;
   text-align: center;
+  font-size: 30px;
 }
-
 .menu-list-data {
-  padding-top: 70px;
+  padding-top: 56px;
 }
 .menu-item-data {
   line-height: 55px;
@@ -34,8 +48,7 @@ body {
 }
 
 .fixed .title-sticky {
-  position: fixed;
-  left: 0;
+  position: sticky;
   top: 0;
   padding: 10px;
 }
