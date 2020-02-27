@@ -1,16 +1,4 @@
-@import "./base/variables";
-@import "./base/mixins";
-@import "./base/extends";
-@import "./base/fontface";
-@import "./base/reset";
-
-@import "./layout/header";
-@import "./layout/navbar";
-
-@import "./layout/breadcrumb";
-@import "./layout/main";
-@import "./layout/sidebar";
-@import "./layout/content";
-@import "./layout/footer";
-
-@import "./modules/form";
+@import './base/all';
+@import './layout/all';
+@import './modules/all';
+@include repeatClassMap($repeat-property,0,5,px,5);

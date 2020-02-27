@@ -2,7 +2,7 @@
   @extend %header-logo-shared;
   top: 0;
   height: 100%;
-  width: 62rem;
+  @include convertSize(width,75);
   position: absolute;
   &-item {
     font: {

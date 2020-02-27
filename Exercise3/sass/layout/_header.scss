@@ -1,13 +1,12 @@
 .container {
+  @include convertSize(max-width, 75);
   margin: 0 auto;
-  max-width: 62rem;
 }
 .header-full {
   width: 100%;
   .header-top {
-    padding-bottom: 5px;
     top: 0;
-    border-bottom: 1px solid #e9e9e9;
+    border-bottom: 1px solid $boder-secondary;
     .container {
       padding: 13px 0 10px 0;
     }
@@ -20,20 +19,18 @@
 .header-logo {
   @extend %header-logo-shared;
   .logo-img {
-    margin-right: 15px;
-    width: 3.5rem;
-    height: 3.6rem;
+    @include convertSize(width, 3.5);
+    @include convertSize(height, 3.6);
   }
   .title {
     &-clinic {
-      @include color-fontsize(#0d1d25, 20px);
+      @include color-fontsize($text-5, $font-size-heading-1);
       margin-bottom: 3px;
-      padding-top: 5px;
       text-transform: uppercase;
       font-family: "UTMAvoBold";
     }
     &-phys {
-      @include color-fontsize(#485054, 15.9px);
+      @include color-fontsize($text-4, $pxBase);
       margin-bottom: 3px;
       font-family: "UTM Avo";
     }
@@ -43,15 +40,15 @@
   @extend %header-logo-shared;
   .phone-img {
     margin-right: 8px;
-    width: 1.65rem;
-    height: 1.65rem;
+    @include convertSize(width, 1.65);
+    @include convertSize(height, 1.65);
   }
   .title-question {
-    @include color-fontsize(#828282, 14px);
+    @include color-fontsize($text-3, $font-size-heading-4);
     margin-right: 7px;
     font-style: italic;
   }
   .title-number {
-    @include color-fontsize(#4cc1fc, 18px);
+    @include color-fontsize($link-primary, $font-size-heading-3);
   }
 }

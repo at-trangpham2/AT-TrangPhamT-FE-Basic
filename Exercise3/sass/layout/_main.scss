@@ -8,6 +8,6 @@
 .section-services {
   padding-top: 69px;
   .container {
-    display: flex;
+    @include prefixFlex;
   }
 }

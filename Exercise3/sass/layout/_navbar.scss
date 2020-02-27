@@ -1,35 +1,33 @@
 .header-nav .container {
   @extend %header-wrap-shared;
-  align-items: center;
+  @include prefixAlign-items(center);
 }
 
-.navigation {
-  margin-left: 14px;
-  .menu-list {
-    display: flex;
-  }
+.menu-list {
+  @include prefixFlex;
 }
 
 .menu-item {
   padding: 18px 28px 18px 13px;
   margin-right: 1px;
-  border-right: 1px solid #e9e9e9;
+  border-right: 1px solid $boder-secondary;
+  &:last-child {
+    border: none;
+  }
   .menu-link {
-    @include color-fontsize(#b3b3b3, 12px);
+    @include color-fontsize($text-6, $font-size-normal);
     &:hover {
       color: $link-primary;
     }
   }
-  .menu-link-health {
+  .active {
     color: $link-primary;
   }
 }
-.menu-item-6 {
-  border: 0;
+.menu-list-img {
+  @include prefixFlex;
 }
-
 .menu-list-img .follow-img {
-  margin-left: 5px;
-  width: 1.2rem;
-  height: 1.2rem;
+  @include convertSize(width, 1.2);
+  @include convertSize(height, 1.2);
 }

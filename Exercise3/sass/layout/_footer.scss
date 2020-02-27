@@ -1,9 +1,9 @@
 .footer-information {
-  margin-top: 19px;
+  color: $text-white;
   width: 100%;
   background-color: $bg-secondary;
   .section-information {
-    border-bottom: 1px solid #e9e9e9;
+    border-bottom: 1px solid $boder-secondary;
     .container {
       @extend %header-wrap-shared;
       padding: 41px 0 32px 0;
@@ -13,13 +13,14 @@
 .info-detail {
   margin-left: 6px;
   .title-info {
-    @include styleTitle;
+    @extend %styleTitle;
   }
   .menu-list-info {
     margin-left: 16px;
     .menu-item-info {
-      @include color-fontsize(white, 12px);
-      line-height: 1.5rem;
+      // line-height: 1.5rem;
+      @include convertSize(line-height, 1.5);
+      font-size: $font-size-normal;
       text-transform: uppercase;
       list-style-type: disc;
     }
@@ -28,44 +29,38 @@
 .info-detail-social {
   margin-right: 183px;
   .title-info {
-    @include styleTitle;
+    @extend %styleTitle;
   }
 }
-.menu-list-icon {
-  margin-left: 0px;
-  .menu-icon {
-    display: flex;
-    align-items: center;
-    .icon-info {
-      margin-right: 7px;
-      width: 1.2rem;
-      height: 1.2rem;
-    }
+
+.menu-icon {
+  @include prefixFlex;
+  @include prefixAlign-items(center);
+  .icon-info {
+    @include convertSize(width, 1.2);
+    @include convertSize(height, 1.2);
+    margin-right: 7px;
   }
-  .menu-item-info {
-    @include color-fontsize(white, 12px);
-    line-height: 1.5rem;
-    text-transform: uppercase;
-  }
+}
+.menu-item-info {
+  @include convertSize(line-height, 1.5);
+  font-size: $font-size-normal;
+  // line-height: 1.5rem;
+  text-transform: uppercase;
 }
 
 .footer-information .container {
   @include clearfix();
   padding: 16px 0px 21px 0px;
   .copyright-left {
-    @include color-fontsize(white, 11.9px);
-    padding-left: 5px;
+    font-size: $font-size-normal;
     text-transform: uppercase;
   }
   .copyright-right {
-    @include color-fontsize(white, 11.9px);
-    padding: {
-      top: 5px;
-      right: 10px;
-    }
+    font-size: $font-size-normal;
+    @include prefixFlex;
     text-transform: uppercase;
     float: right;
-    display: flex;
     p {
       color: $text-success;
       margin-left: 1px;
