@@ -1,0 +1,24 @@
+// $pxBase : 16px;
+@function calculatePx($size) {
+  $pxSize: $size * $pxBase;
+  @return #{$pxSize};
+}
+
+$left: left;
+$right: right;
+$top: top;
+$bottom: bottom;
+$margin: margin;
+$padding: padding;
+
+$repeat-property: $padding $left, $padding $right, $padding $top,
+  $padding $bottom, $margin $left, $margin $right, $margin $top, $margin $bottom;
+
+@function addUnitToValue($value, $unit) {
+  @return if($value != 0, $value + $unit, 0);
+}
+
+@function incrementNumber($i, $increment, $unit) {
+  @return addUnitToValue(0 + ($i * $increment), $unit);
+}
+

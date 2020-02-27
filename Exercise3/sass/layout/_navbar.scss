@@ -1,0 +1,33 @@
+.header-nav .container {
+  @extend %header-wrap-shared;
+  @include prefixAlign-items(center);
+}
+
+.menu-list {
+  @include prefixFlex;
+}
+
+.menu-item {
+  padding: 18px 28px 18px 13px;
+  margin-right: 1px;
+  border-right: 1px solid $boder-secondary;
+  &:last-child {
+    border: none;
+  }
+  .menu-link {
+    @include color-fontsize($text-6, $font-size-normal);
+    &:hover {
+      color: $link-primary;
+    }
+  }
+  .active {
+    color: $link-primary;
+  }
+}
+.menu-list-img {
+  @include prefixFlex;
+}
+.menu-list-img .follow-img {
+  @include convertSize(width, 1.2);
+  @include convertSize(height, 1.2);
+}

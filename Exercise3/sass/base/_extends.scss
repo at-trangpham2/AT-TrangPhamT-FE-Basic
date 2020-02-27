@@ -1,0 +1,21 @@
+%header-wrap-shared {
+  display: flex;
+  justify-content: space-between;
+}
+
+%font-weight-bold {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+%header-logo-shared {
+  display: flex;
+  align-items: center;
+}
+
+%styleTitle {
+  margin-bottom: 10px;
+  color: $text-white;
+  font-size: $font-size-heading-3;
+  font-family: "UTMAvoBold";
+}

@@ -1,0 +1,56 @@
+@mixin color-fontsize($color, $fontsize) {
+  color: $color;
+  font-size: $fontsize;
+}
+
+@mixin convertSize($property, $size) {
+  #{$property}: calculatePx($size);
+  #{$property}: $size + 0rem;
+}
+
+@mixin clearfix() {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+
+// @mixin  prefix($property, $value, $prefixes) {
+//   @each $prefix in $prefixes {
+//     -#{$prefix}-#{$property}: $value;
+//   }
+//   $property: $value;
+// }
+@mixin prefixFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin prefixFlexwrap($parameters) {
+  -ms-flex-wrap: $parameters;
+  flex-wrap: $parameters;
+}
+@mixin prefixAlign-items($parameters) {
+  -webkit-box-align: $parameters;
+  -ms-flex-align: $parameters;
+  align-items: $parameters;
+}
+
+//dynamic padding and margin
+@mixin repeatClassMap($reapet-name, $start, $end, $unit, $increment: 1) {
+  @each $property in $reapet-name {
+    $key: nth($property, 1);
+    $value: nth($property, 2);
+
+    @for $i from $start through $end {
+      .#{$key}-#{$value}-#{$i * $increment} {
+        #{$key}-#{$value}: incrementNumber($i, $increment, $unit);
+      }
+    }
+  }
+}
+
+
+

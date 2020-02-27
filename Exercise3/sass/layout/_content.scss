@@ -1,0 +1,41 @@
+.services-list {
+  @include prefixFlex;
+  @include prefixFlexwrap(wrap);
+}
+.services-item {
+  width: calc(100% / 3);
+  .services-wrap {
+    border: 1px solid $border-primary;
+    .services-img {
+      width: 100%;
+      @include convertSize(height, 9.1);
+      // height: 9.1rem;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  height: 175px;
+  .content-wrap {
+    padding: 14px 35px 39px 19px;
+    .services-title {
+      padding-left: 2px;
+      font-size: $font-size-heading-3;
+      text-transform: uppercase;
+    }
+    .paragraph {
+      padding-left: 2px;
+      font-size: $font-size-p;
+      line-height: 1.36;
+    }
+  }
+  .next-img {
+    background-color: $bg-secondary;
+    padding: 4px;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    position: absolute;
+  }
+}

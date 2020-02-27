@@ -1,0 +1,13 @@
+.main-full .section-banner {
+  position: relative;
+  .banner-img {
+    width: 100%;
+  }
+}
+
+.section-services {
+  padding-top: 69px;
+  .container {
+    @include prefixFlex;
+  }
+}

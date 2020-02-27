@@ -1,0 +1,54 @@
+.container {
+  @include convertSize(max-width, 75);
+  margin: 0 auto;
+}
+.header-full {
+  width: 100%;
+  .header-top {
+    top: 0;
+    border-bottom: 1px solid $boder-secondary;
+    .container {
+      padding: 13px 0 10px 0;
+    }
+  }
+}
+.header-wrap {
+  @extend %header-wrap-shared;
+  width: 100%;
+}
+.header-logo {
+  @extend %header-logo-shared;
+  .logo-img {
+    @include convertSize(width, 3.5);
+    @include convertSize(height, 3.6);
+  }
+  .title {
+    &-clinic {
+      @include color-fontsize($text-5, $font-size-heading-1);
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      font-family: "UTMAvoBold";
+    }
+    &-phys {
+      @include color-fontsize($text-4, $pxBase);
+      margin-bottom: 3px;
+      font-family: "UTM Avo";
+    }
+  }
+}
+.header-contact {
+  @extend %header-logo-shared;
+  .phone-img {
+    margin-right: 8px;
+    @include convertSize(width, 1.65);
+    @include convertSize(height, 1.65);
+  }
+  .title-question {
+    @include color-fontsize($text-3, $font-size-heading-4);
+    margin-right: 7px;
+    font-style: italic;
+  }
+  .title-number {
+    @include color-fontsize($link-primary, $font-size-heading-3);
+  }
+}

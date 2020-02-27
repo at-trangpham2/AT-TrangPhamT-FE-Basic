@@ -1,0 +1,18 @@
+.breadcrumb {
+  @extend %header-logo-shared;
+  top: 0;
+  height: 100%;
+  @include convertSize(width,75);
+  position: absolute;
+  &-item {
+    font: {
+      size: $font-size-normal;
+      family: "UTM Avo";
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding: 17px 15px;
+    color: $text-primary;
+    content: "/\00a0";
+  }
+}
