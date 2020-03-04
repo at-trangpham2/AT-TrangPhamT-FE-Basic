@@ -39,7 +39,9 @@
 .step-item.active {
   background-color: $bg-primary;
   color: $text-secondary;
+  transition: background-color 1s ease-out;
 }
 .active.step-item:nth-child(n)::before {
   background-color: $bg-primary;
+  transition: background-color 1s ease-out;
 }

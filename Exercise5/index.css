@@ -73,10 +73,12 @@ input {
 
 .step-item.active {
   background-color: #9b59b6;
-  color: white; }
+  color: white;
+  transition: background-color 1s ease-out; }
 
 .active.step-item:nth-child(n)::before {
-  background-color: #9b59b6; }
+  background-color: #9b59b6;
+  transition: background-color 1s ease-out; }
 
 body {
   background-color: #f8ceec;
@@ -199,7 +201,7 @@ p {
   font-size: 12px; }
 
 .second-form, .third-form, .show-info, .final-result {
-  animation: left_to_right 1s ease; }
+  animation: left_to_right .7s ease; }
 
 @keyframes left_to_right {
   from {

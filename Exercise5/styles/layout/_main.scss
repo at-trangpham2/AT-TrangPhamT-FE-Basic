@@ -132,7 +132,7 @@ p {
 }
 
 .second-form,.third-form,.show-info,.final-result {
-  animation: left_to_right 1s ease;
+  animation: left_to_right .7s ease;
 }
 @keyframes left_to_right {
   from {
