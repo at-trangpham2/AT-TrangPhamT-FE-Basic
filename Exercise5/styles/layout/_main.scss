@@ -130,3 +130,16 @@ p {
   left: 0;
   font-size: 12px;
 }
+
+.second-form,.third-form,.show-info,.final-result {
+  animation: left_to_right 1s ease;
+}
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 20%;
+  }
+}
+

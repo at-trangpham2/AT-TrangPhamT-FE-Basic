@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -196,6 +198,14 @@ p {
   left: 0;
   font-size: 12px; }
 
+.second-form, .third-form, .show-info, .final-result {
+  animation: left_to_right 1s ease; }
+
+@keyframes left_to_right {
+  from {
+    margin-left: -100%; }
+  to {
+    margin-left: 20%; } }
 .btn-back {
   margin-top: 20px;
   width: 18%;
