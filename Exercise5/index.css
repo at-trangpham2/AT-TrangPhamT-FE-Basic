@@ -136,6 +136,8 @@ body {
   display: none; }
 
 .phone-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -149,6 +151,8 @@ body {
   border-color: white; }
 
 .third-form .code-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -195,6 +199,8 @@ p {
   margin-bottom: 20px; }
 
 .btn-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%; }
 

@@ -1,8 +1,6 @@
 body {
   background-image: url('./image/background-image.jpg');
   background-size: cover;
-  // background-color: #f8ceec;
-  // background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
 .container {
   margin: auto;
@@ -25,9 +23,6 @@ body {
   }
 }
 
-// .header h2 {
-//   margin: 0;
-// }
 .form {
   margin: auto;
   padding: 4px 40px;
@@ -64,7 +59,7 @@ body {
   display: none;
 }
 .phone-wrap {
-  display: inline-flex;
+  @include prefixInlineFlex;
   justify-content: space-between;
   margin-bottom: 60px;
   margin-top: 6px;
@@ -73,11 +68,11 @@ body {
   width: 28%;
 }
 .third-form {
-  background-color: white;
-  border-color: white;
+  background-color: $text-secondary;
+  border-color: $text-secondary;
 }
 .third-form .code-wrap {
-  display: inline-flex;
+  @include prefixInlineFlex;
   justify-content: space-between;
   margin-bottom: 60px;
   margin-top: 26px;
@@ -126,7 +121,7 @@ p {
   margin-bottom: 20px;
 }
 .btn-wrap {
-  display: inline-flex;
+  @include prefixInlineFlex;
   width: 100%;
 }
 
