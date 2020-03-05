@@ -1,0 +1,47 @@
+.step-wrap {
+  padding: 4px 80px;
+}
+.step-list {
+  display: flex;
+  list-style: none;
+}
+
+.step-item {
+  padding: 8px;
+  border: 1px solid $border-primary;
+  border-radius: 50%;
+  width: 46px;
+  text-align: center;
+  margin: 20px 44px;
+  position: relative;
+  cursor: pointer;
+}
+
+.step-item::before {
+  text-align: center;
+  top: 20px;
+  bottom: 0;
+  right: 45px;
+  position: absolute;
+  content: " ";
+  width: 89px;
+  height: 3px;
+  background-color: $bg-light;
+}
+.step-item:first-child::before {
+  content: none;
+}
+
+.step-item:first-child {
+  background-color: $bg-primary;
+  color: $text-secondary;
+}
+.step-item.active {
+  background-color: $bg-primary;
+  color: $text-secondary;
+  transition: background-color 1s ease-out;
+}
+.active.step-item:nth-child(n)::before {
+  background-color: $bg-primary;
+  transition: background-color 1s ease-out;
+}

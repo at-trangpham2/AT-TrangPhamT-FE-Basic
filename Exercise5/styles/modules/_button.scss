@@ -1,0 +1,33 @@
+
+.btn-back {
+  @extend %button-shared;
+  margin-top: 20px;
+  width: 18%;
+  margin-bottom: 30px;
+}
+.btn-confirm {
+  @extend %button-shared;
+  display: block;
+  width: 36%;
+}
+.third-btn-next:disabled,.second-btn-next:disabled{
+  background-color: rgb(156, 151, 151);
+  border: 2px solid rgb(156, 151, 151);
+  border-radius: 4px;
+  color: $text-secondary;
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 36%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+button,.third-btn-next:enabled,.second-btn-next:enabled{
+  @extend %button-shared;
+  display: block;
+  margin-top: 20px;
+  width: 36%;
+  margin-bottom: 20px;
+}

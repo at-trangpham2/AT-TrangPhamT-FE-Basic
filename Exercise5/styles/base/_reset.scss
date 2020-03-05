@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+input {
+  border: none;
+  outline: none;
+}

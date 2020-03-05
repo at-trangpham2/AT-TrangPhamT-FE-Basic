@@ -1,0 +1,149 @@
+body {
+  background-image: url('./image/background-image.jpg');
+  background-size: cover;
+}
+.container {
+  margin: auto;
+  background-color: $text-secondary;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-width: 830px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.header {
+  border-bottom: 1px solid $border-secondary;
+  background-color: $bg-secondary;
+  padding: 20px 40px;
+  text-align: center;
+  h2 {
+    margin: 0;
+  }
+}
+
+.form {
+  margin: auto;
+  padding: 4px 40px;
+  width: 500px;
+  position: relative;
+}
+.message {
+  color: $border-error;
+  font-size: 16px;
+  padding: 8px;
+  top: 0;
+  width: 83%;
+  margin: auto;
+}
+.form-control {
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.form-control:nth-child(6) {
+  margin-bottom: 60px;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+.second-form,
+.third-form,
+.show-info,
+.final-result,
+.btn-back {
+  display: none;
+}
+.phone-wrap {
+  @include prefixInlineFlex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: 6px;
+}
+.phone-wrap .form-control {
+  width: 28%;
+}
+.third-form {
+  background-color: $text-secondary;
+  border-color: $text-secondary;
+}
+.third-form .code-wrap {
+  @include prefixInlineFlex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: 26px;
+}
+.third-form .form-control {
+  width: 125px;
+}
+.third-form label {
+  font-weight: 560;
+}
+.notice {
+  text-align: left;
+  font-size: 15px;
+}
+.show-info {
+  margin: auto;
+  padding: 30px 40px;
+  width: 500px;
+  ul {
+    margin-bottom: 60px;
+    line-height: 3;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.label-bold {
+  font-weight: bold;
+}
+span {
+  margin-left: 44px;
+}
+.final-result {
+  margin: auto;
+  width: 500px;
+  img {
+    width: 80px;
+  }
+}
+.final-result h3,
+.icon-tick,
+h4,
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.btn-wrap {
+  @include prefixInlineFlex;
+  width: 100%;
+}
+
+.message-code {
+  visibility: hidden;
+}
+.visible.message-code {
+  visibility: visible;
+  color: $border-error;
+  left: 0;
+  font-size: 12px;
+}
+
+.second-form,.third-form,.show-info,.final-result {
+  animation: left_to_right .7s ease;
+}
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 20%;
+  }
+}
+

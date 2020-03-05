@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="header">
+          <h2>Registration</h2>
+        </div>
+        <div class="step-wrap">
+          <ul class="step-list">
+            <li class="step-item">
+              1
+            </li>
+            <li class="step-item">
+              2
+            </li>
+            <li class="step-item">
+              3
+            </li>
+            <li class="step-item">
+              4
+            </li>
+            <li class="step-item">
+              5
+            </li>
+          </ul>
+        </div>
+
+        <form id="js-first-form" class="form first-form">
+          <p class="message message-first"></p>
+          <div class="form-control">
+            <label for="firstname">First name</label>
+            <input type="text" placeholder="firstname" id="firstname" />
+          </div>
+          <div class="form-control">
+            <label for="lastname">Last name</label>
+            <input type="text" placeholder="lastname" id="lastname" />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" placeholder="abc@gmail.com" id="email" />
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" />
+          </div>
+          <div class="form-control">
+            <label for="password">Confirm password</label>
+            <input
+              type="password"
+              placeholder="confirm password"
+              id="checkpassword"
+            />
+          </div>
+          <button type="button" id="js-first-btn-next">Next</button>
+        </form>
+
+        <form id="js-second-form" class="form second-form">
+          <p class="message message-second"></p>
+          <label for="phone">Your phone number</label>
+          <p class="notice">Please enter 10-digits number</p>
+          <div class="phone-wrap">
+            <div class="form-control ">
+              <input type="text" placeholder="XXXX" id="phone-first" class="phone" maxlength="4" onkeyup="moveOnMax(this,'phone-second')" />
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="XXX" id="phone-second" class="phone" maxlength="3" onkeyup="moveOnMax(this,'phone-third')" />
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="XXX" id="phone-third" class="phone" maxlength="3" onkeyup="moveOnMax(this,'phone-first')" />
+            </div>
+          </div>
+          <button type="button" id="js-second-btn-next" class="second-btn-next">
+            Next
+          </button>
+        </form>
+
+        <form id="js-third-form" class="form third-form">
+          <p class="message message-third"></p>
+          <label for="code">SMS code</label>
+          <p class="notice">Please enter 4-digit sms code you received</p>
+          <div class="code-wrap">
+            <div class="form-control ">
+              <input type="text" class="code" id="code-first" min="0" max="9" maxlength="1" onkeyup="moveOnMax(this,'code-second')" />
+            </div>
+            <div class="form-control ">
+              <input type="text" class="code" id="code-second" min="0" max="9" maxlength="1" onkeyup="moveOnMax(this,'code-third')" />
+            </div>
+            <div class="form-control ">
+              <input type="text" class="code" id="code-third" min="0" max="9" maxlength="1" onkeyup="moveOnMax(this,'code-fourth')" />
+            </div>
+            <div class="form-control ">
+              <input type="text" class="code" id="code-fourth" min="0" max="9" maxlength="1" onkeyup="moveOnMax(this,'code-first')" />
+            </div>
+          </div>
+
+          <button type="button" id="js-third-btn-next" class="third-btn-next">
+            Next
+          </button>
+        </form>
+
+        <div id="js-show-info" class="show-info">
+          <h3>Your Information</h3>
+          <ul id="js-list-info" class="list-info"></ul>
+          <button type="button" class="btn-confirm" id="js-btn-confirm">
+            Confirm
+          </button>
+        </div>
+
+        <div id="js-display-result" class="final-result">
+          <div class="result-wrap">
+            <h3>Thank you for your Registration</h3>
+            <div class="icon-tick">
+              <img src="./image/tick1.png" alt="" />
+            </div>
+
+            <h4>Your account has been created</h4>
+            <p>Sign in now</p>
+            <button class="btn-start">Get started!</button>
+          </div>
+        </div>
+        <button type="button" class="btn-back" id="js-btn-back">Back</button>
+      </div>
+    </section>
+    <script src="./form.js"></script>
+  </body>
+</html>

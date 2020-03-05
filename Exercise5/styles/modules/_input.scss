@@ -1,0 +1,29 @@
+.form-control input {
+  border: 2px solid $border-secondary;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: $border-focus;
+}
+
+.form-control.success input {
+  border-color: $border-success;
+}
+
+.form-control.error input {
+  border-color: $border-error;
+}
+.phone-wrap input {
+  text-align: center;
+}
+.third-form input {
+  width: 40%;
+  text-align: center;
+  height: 70px;
+}
