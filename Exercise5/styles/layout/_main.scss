@@ -1,6 +1,8 @@
 body {
-  background-color: #f8ceec;
-  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  background-image: url('./image/background-image.jpg');
+  background-size: cover;
+  // background-color: #f8ceec;
+  // background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
 .container {
   margin: auto;
@@ -82,6 +84,13 @@ body {
 }
 .third-form .form-control {
   width: 125px;
+}
+.third-form label {
+  font-weight: 560;
+}
+.notice {
+  text-align: left;
+  font-size: 15px;
 }
 .show-info {
   margin: auto;
